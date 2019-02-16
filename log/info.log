@@ -1,0 +1,9 @@
+2019-02-16 12:48:42,575 log_helper.py[line:11] INFO 记录代码执行的相关信息或记录
+2019-02-16 12:48:42,577 log_helper.py[line:21] INFO 出现异常("unsupported operand type(s) for /: 'str' and 'int'",)
+Traceback (most recent call last):
+  File "F:\python_web_test\test\log_helper_test.py", line 33, in test
+    result = '0'/10
+TypeError: unsupported operand type(s) for /: 'str' and 'int'
+
+程序调用堆栈的日志：_jb_unittest_runner.py(<module>:35)->main.py(__init__:95)->main.py(runTests:256)->unittestpy.py(run:304)->runner.py(run:176)->suite.py(__call__:84)->suite.py(run:122)->suite.py(__call__:84)->suite.py(run:122)->case.py(__call__:653)->case.py(run:605)->log_helper_test.py(test:35)->log_helper.py(error:18)->
+

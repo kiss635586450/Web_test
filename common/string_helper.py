@@ -141,7 +141,7 @@ def cut_str(text, length):
         return text
     tem = ''
     try:
-        tem = text.encode('utf8')#?/?tem = text.decode('utf8')
+        tem = text.decode('utf8')#?/?tem = text.decode('utf8')
     except:
         pass
     if not tem or tem == '':

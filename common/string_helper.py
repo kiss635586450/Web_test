@@ -27,7 +27,15 @@ def is_phone(text):
        :param text: 需要检查的字符串
        :return: 含有指定字符时返回真，否则为假
     """
-    return (text,  '^1[3578]\d{9}$|^147\d{8}$')
+    return check_string(text, '\(?0\d{2,3}[) -]?\d{7,8}$')
+
+def is_mobile(text):
+    """
+    是否是手机号码
+    :param text:
+    :return:
+    """
+    return check_string(text, '^1[3578]\d{9}$|^147\d{8}$')
 
 def is_letters(text):
     """

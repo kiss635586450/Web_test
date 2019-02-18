@@ -72,7 +72,7 @@ def write(sql, vars):
     except Exception as e:
         print(e.args)
         #如果出错，则事务回滚
-        conn.rollbace()
+        conn.rollback()
         log_helper.error('sql执行失败:'+ str(e.args) + 'sql:' + str(sql))
         return False
     else:

@@ -5,8 +5,6 @@ from common import verify_helper, log_helper, web_helper
 @get('/api/verify/')
 def get_verify():
     """生成验证码图片"""
-
-
     try:
         # 获取生成验证码图片与验证码
         code_img, verify_code = verify_helper.create_verify_code()

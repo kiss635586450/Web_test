@@ -1,5 +1,5 @@
 import re
-
+import bleach
 def check_string(text, pattern):
     """"
     检查字符串是否符合指定规则
@@ -63,6 +63,18 @@ def filter_str(text, filter='\||<|>|&|%|~|\^|;|\''):
         return re.subn(filter, '', text)[0]
     else:
         return ''
+def clear_xss(html):
+    """
+    清除xss攻击标签
+    :param html: 要处理的html
+    :return:
+    """
+    tags = ['a', 'abbr', 'acronym', 'b', 'blockquote', 'code', 'em', 'i', 'li', 'ol', 'strong', 'ul']
+    tags.extend(
+        ['div', 'p', 'hr', 'br', 'pre', 'code', 'span', 'h1', 'h2', 'h3', 'h4', 'h5', 'del', 'dl', 'img', 'sub', 'sup', 'u',
+         'table', 'thead', 'tr', 'th', 'td', 'tbody', 'dd', 'caption', 'blockquote', 'section'])
+    attributes = {'*': ['class', 'id'], 'a': ['href', 'title', 'target'], 'img': ['src', 'style', 'width', 'height']}
+    return bleach.linkify(bleach.clean(html, tags=tags, attributes=attributes))
 
 def filter_tags(hemlstr):
     """

@@ -3,7 +3,7 @@ import sys
 import os
 import logging
 import urllib.parse
-from bottle import default_app, get, run, request, hook
+from bottle import default_app, get, run, request, hook, route, response, static_file
 from beaker.middleware import SessionMiddleware
 
 #导入工具函数包
@@ -24,6 +24,8 @@ bottle.BaseRequest.MEMFILE_MAX = 1024*1024*2
 #############################################
 #初始化日志相关参数
 #############################################
+#定义upload为上传文件存储路径
+upload_path = os.path.join(program_path, 'upload')
 #如果日志目录log文件夹不存在，啧创建日志目录
 if not os.path.exists('log'):
     os.mkdir('log')
@@ -89,6 +91,12 @@ def validate():
         #判断用户是否登录
         if not manager_id or not login_name:
             web_helper.return_raise(web_helper.return_msg(-404, "您的登录已失效，请重新登录"))
+#添加下载文件访问路由，设置只要放在upload目录下的文件可以直接通过浏览器下载
+@get('/upload/<filepath:path>')
+def upload_static(filepath):
+    """设置为静态内容路由"""
+    response.add_header('Content-Type', 'application/octet-stream')
+    return static_file(filepath, root=upload_path)
 
 if __name__ == '__main__':
     app_argv = SessionMiddleware(default_app(), session_opts)

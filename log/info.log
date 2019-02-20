@@ -16,3 +16,8 @@ TypeError: unsupported operand type(s) for /: 'str' and 'int'
 2019-02-19 13:44:36,200 log_helper.py[line:11] INFO url:/api/about/ip: 127.0.0.1params(post){'dict': {'front_cover_img': ['http://localhost:81/about_edit.html'], 'content': ['<p><img src="/upload/20190219/20190219134421TFsmu.jpg" title="20190219134421TFsmu.jpg" alt="20190219134421TFsmu.jpg"/></p>'], '_method': ['put']}}
 2019-02-19 13:44:38,433 log_helper.py[line:11] INFO url:/api/about/ip: 127.0.0.1
 2019-02-19 13:44:38,495 log_helper.py[line:11] INFO url:/upload/20190219/20190219134421TFsmu.jpgip: 127.0.0.1
+2019-02-20 16:28:43,223 log_helper.py[line:11] INFO url:/api/product_class/ip: 127.0.0.1params(get):_search=false&nd=1550651323218&rows=20&page=1&sidx=id&sord=desc
+2019-02-20 16:28:57,831 log_helper.py[line:11] INFO url:/api/product_class/ip: 127.0.0.1params(post){'dict': {'is_enable': ['1'], 'name': ['“˚¡œ']}}
+2019-02-20 16:28:59,443 log_helper.py[line:11] INFO url:/api/product_class/ip: 127.0.0.1params(get):_search=false&nd=1550651339436&rows=20&page=1&sidx=id&sord=desc
+2019-02-20 16:29:08,574 log_helper.py[line:11] INFO url:/api/product_class/3/ip: 127.0.0.1params(post){'dict': {'_method': ['delete']}}
+2019-02-20 16:29:11,038 log_helper.py[line:11] INFO url:/api/product_class/ip: 127.0.0.1params(get):_search=false&nd=1550651351033&rows=20&page=1&sidx=id&sord=desc

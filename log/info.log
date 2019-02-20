@@ -7,76 +7,12 @@ TypeError: unsupported operand type(s) for /: 'str' and 'int'
 
 程序调用堆栈的日志：_jb_unittest_runner.py(<module>:35)->main.py(__init__:95)->main.py(runTests:256)->unittestpy.py(run:304)->runner.py(run:176)->suite.py(__call__:84)->suite.py(run:122)->suite.py(__call__:84)->suite.py(run:122)->case.py(__call__:653)->case.py(run:605)->log_helper_test.py(test:35)->log_helper.py(error:18)->
 
-2019-02-18 14:18:42,198 log_helper.py[line:11] INFO url:/api/verify/ip: 127.0.0.1
-2019-02-18 14:22:18,505 log_helper.py[line:11] INFO url:/api/verify/ip: 127.0.0.1
-2019-02-18 16:42:11,612 log_helper.py[line:11] INFO url:/api/verify.py/ip: 127.0.0.1
-2019-02-18 16:42:28,783 log_helper.py[line:11] INFO url:/api/login/ip: 127.0.0.1params(post){'dict': {'verify': ['zdbm'], 'password': ['123456'], 'username': ['admin'], '_method': ['put']}}
-2019-02-18 16:42:39,333 log_helper.py[line:11] INFO url:/api/login/ip: 127.0.0.1params(post){'dict': {'verify': ['sckg'], 'password': ['123456'], 'username': ['admin'], '_method': ['put']}}
-2019-02-18 16:42:45,925 log_helper.py[line:11] INFO url:/api/login/ip: 127.0.0.1params(post){'dict': {'verify': ['vpa0'], 'password': ['123456'], 'username': ['admin'], '_method': ['put']}}
-2019-02-18 16:43:52,026 log_helper.py[line:11] INFO url:/api/verify.py/ip: 127.0.0.1
-2019-02-18 16:44:07,016 log_helper.py[line:11] INFO url:/api/login/ip: 127.0.0.1params(post){'dict': {'username': ['admin'], 'password': ['123456'], 'verify': ['ttar'], '_method': ['put']}}
-2019-02-18 16:44:07,087 log_helper.py[line:21] INFO sql执行失败:('column "od" does not exist\nLINE 2:     login_count=login_count+1 where od =1\n                                            ^\nHINT:  Perhaps you meant to reference the column "manager.id".\n',)sql:update manager set last_login_time=%s, last_login_ip=%s,
-    login_count=login_count+1 where od =%s
-Traceback (most recent call last):
-  File "F:\web_python_test\common\db_helper.py", line 69, in write
-    cursor.execute(sql, vars)
-psycopg2.ProgrammingError: column "od" does not exist
-LINE 2:     login_count=login_count+1 where od =1
-                                            ^
-HINT:  Perhaps you meant to reference the column "manager.id".
-
-
-程序调用堆栈的日志：main.py(<module>:95)->bottle.py(run:3125)->bottle.py(run:2782)->socketserver.py(serve_forever:234)->socketserver.py(_handle_request_noblock:313)->socketserver.py(process_request:341)->socketserver.py(finish_request:354)->socketserver.py(__init__:681)->simple_server.py(handle:138)->handlers.py(run:137)->middleware.py(__call__:156)->bottle.py(__call__:979)->bottle.py(wsgi:954)->bottle.py(_handle:862)->bottle.py(wrapper:1740)->login.py(post_login:68)->db_helper.py(write:76)->log_helper.py(error:18)->
-
-2019-02-18 16:54:28,635 log_helper.py[line:11] INFO url:/api/verify.py/ip: 127.0.0.1
-2019-02-18 16:55:12,623 log_helper.py[line:11] INFO url:/api/login/ip: 127.0.0.1params(post){'dict': {'_method': ['put'], 'password': ['123456'], 'username': ['admin'], 'verify': ['dx5k']}}
-2019-02-19 10:04:09,077 log_helper.py[line:11] INFO url:/api/about/ip: 127.0.0.1
-2019-02-19 11:05:47,766 log_helper.py[line:11] INFO url:/upload/test.jpgip: 127.0.0.1
-2019-02-19 11:09:53,262 log_helper.py[line:11] INFO url:/upload/test.jpgip: 127.0.0.1
-2019-02-19 11:20:25,536 log_helper.py[line:11] INFO url:/main.htmlip: 127.0.0.1
-2019-02-19 11:25:05,364 log_helper.py[line:11] INFO url:/api/about/ip: 127.0.0.1
-2019-02-19 11:25:27,407 log_helper.py[line:11] INFO url:/upload/test.jpgip: 127.0.0.1
-2019-02-19 11:26:16,738 log_helper.py[line:11] INFO url:/login/ip: 127.0.0.1
-2019-02-19 11:26:24,232 log_helper.py[line:11] INFO url:/login.htmlip: 127.0.0.1
-2019-02-19 11:28:36,336 log_helper.py[line:11] INFO url:/login.htmlip: 127.0.0.1
-2019-02-19 11:36:39,523 log_helper.py[line:11] INFO url:/api/about/ip: 127.0.0.1
-2019-02-19 11:38:00,108 log_helper.py[line:11] INFO url:/api/files/ip: 127.0.0.1params(post){'dict': {}}
-2019-02-19 11:38:15,556 log_helper.py[line:11] INFO url:/api/files/ip: 127.0.0.1params(post){'dict': {}}
-2019-02-19 11:42:01,926 log_helper.py[line:11] INFO url:/main.htmlip: 127.0.0.1
-2019-02-19 11:42:21,653 log_helper.py[line:11] INFO url:/api/about/ip: 127.0.0.1
-2019-02-19 11:42:32,297 log_helper.py[line:11] INFO url:/api/about/ip: 127.0.0.1
-2019-02-19 11:42:45,819 log_helper.py[line:11] INFO url:/api/login/ip: 127.0.0.1params(post){'dict': {'verify': ['rgo6'], '_method': ['put'], 'password': ['123456'], 'username': ['admin']}}
-2019-02-19 11:42:46,267 log_helper.py[line:11] INFO url:/api/about/ip: 127.0.0.1
-2019-02-19 11:42:57,676 log_helper.py[line:11] INFO url:/api/files/ip: 127.0.0.1params(get):action=uploadimageparams(post){'dict': {'action': ['uploadimage']}}
-2019-02-19 11:42:57,677 log_helper.py[line:21] INFO 上传失败：("'FileUpload' object has no attribute 'fliename'",)
-Traceback (most recent call last):
-  File "F:\web_python_test\api\files.py", line 26, in callback
-    name, ext = os.path.splitext(upload.fliename)
-AttributeError: 'FileUpload' object has no attribute 'fliename'
-
-程序调用堆栈的日志：main.py(<module>:103)->bottle.py(run:3125)->bottle.py(run:2782)->socketserver.py(serve_forever:234)->socketserver.py(_handle_request_noblock:313)->socketserver.py(process_request:341)->socketserver.py(finish_request:354)->socketserver.py(__init__:681)->simple_server.py(handle:138)->handlers.py(run:137)->middleware.py(__call__:156)->bottle.py(__call__:979)->bottle.py(wsgi:954)->bottle.py(_handle:862)->bottle.py(wrapper:1740)->files.py(callback:48)->log_helper.py(error:18)->
-
-2019-02-19 11:50:14,621 log_helper.py[line:11] INFO url:/api/about/ip: 127.0.0.1
-2019-02-19 11:50:20,877 log_helper.py[line:11] INFO url:/api/files/ip: 127.0.0.1params(get):action=uploadimageparams(post){'dict': {'action': ['uploadimage']}}
-2019-02-19 11:50:20,878 log_helper.py[line:21] INFO 上传失败：("'FileUpload' object has no attribute 'fliename'",)
-Traceback (most recent call last):
-  File "F:\web_python_test\api\files.py", line 26, in callback
-    name, ext = os.path.splitext(upload.fliename)
-AttributeError: 'FileUpload' object has no attribute 'fliename'
-
-程序调用堆栈的日志：main.py(<module>:103)->bottle.py(run:3125)->bottle.py(run:2782)->socketserver.py(serve_forever:234)->socketserver.py(_handle_request_noblock:313)->socketserver.py(process_request:341)->socketserver.py(finish_request:354)->socketserver.py(__init__:681)->simple_server.py(handle:138)->handlers.py(run:137)->middleware.py(__call__:156)->bottle.py(__call__:979)->bottle.py(wsgi:954)->bottle.py(_handle:862)->bottle.py(wrapper:1740)->files.py(callback:48)->log_helper.py(error:18)->
-
-2019-02-19 11:57:22,290 log_helper.py[line:11] INFO url:/api/about/ip: 127.0.0.1
-2019-02-19 11:57:26,304 log_helper.py[line:11] INFO url:/api/files/ip: 127.0.0.1params(get):action=uploadimageparams(post){'dict': {'action': ['uploadimage']}}
-2019-02-19 11:57:26,305 log_helper.py[line:21] INFO 上传失败：('to_number() takes 0 positional arguments but 1 was given',)
-Traceback (most recent call last):
-  File "F:\web_python_test\api\files.py", line 35, in callback
-    filepath = '/upload/' + datetime_helper.to_number('%Y%m%d') + '/'
-TypeError: to_number() takes 0 positional arguments but 1 was given
-
-程序调用堆栈的日志：main.py(<module>:103)->bottle.py(run:3125)->bottle.py(run:2782)->socketserver.py(serve_forever:234)->socketserver.py(_handle_request_noblock:313)->socketserver.py(process_request:341)->socketserver.py(finish_request:354)->socketserver.py(__init__:681)->simple_server.py(handle:138)->handlers.py(run:137)->middleware.py(__call__:156)->bottle.py(__call__:979)->bottle.py(wsgi:954)->bottle.py(_handle:862)->bottle.py(wrapper:1740)->files.py(callback:49)->log_helper.py(error:18)->
-
-2019-02-19 12:01:44,268 log_helper.py[line:11] INFO url:/api/about/ip: 127.0.0.1
-2019-02-19 12:01:48,049 log_helper.py[line:11] INFO url:/api/files/ip: 127.0.0.1params(get):action=uploadimageparams(post){'dict': {'action': ['uploadimage']}}
-2019-02-19 12:01:48,085 log_helper.py[line:11] INFO url:/upload/20190219/20190219120148nh8w3.jpgip: 127.0.0.1
-2019-02-19 12:01:56,830 log_helper.py[line:11] INFO url:/api/about/ip: 127.0.0.1params(post){'dict': {'_method': ['put'], 'content': ['<p><img src="/upload/20190219/20190219120148nh8w3.jpg" title="20190219120148nh8w3.jpg" alt="20190219120148nh8w3.jpg"/></p>'], 'front_cover_img': ['http://localhost:81/about_edit.html']}}
+2019-02-19 13:43:21,169 log_helper.py[line:11] INFO url:/api/about/ip: 127.0.0.1
+2019-02-19 13:43:36,381 log_helper.py[line:11] INFO url:/api/login/ip: 127.0.0.1params(post){'dict': {'password': ['123456'], 'username': ['admin'], 'verify': ['Q5vn'], '_method': ['put']}}
+2019-02-19 13:43:36,642 log_helper.py[line:11] INFO url:/api/about/ip: 127.0.0.1
+2019-02-19 13:43:36,720 log_helper.py[line:11] INFO url:/upload/20190219/20190219120148nh8w3.jpgip: 127.0.0.1
+2019-02-19 13:44:21,447 log_helper.py[line:11] INFO url:/api/files/ip: 127.0.0.1params(get):action=uploadimageparams(post){'dict': {'action': ['uploadimage']}}
+2019-02-19 13:44:21,467 log_helper.py[line:11] INFO url:/upload/20190219/20190219134421TFsmu.jpgip: 127.0.0.1
+2019-02-19 13:44:36,200 log_helper.py[line:11] INFO url:/api/about/ip: 127.0.0.1params(post){'dict': {'front_cover_img': ['http://localhost:81/about_edit.html'], 'content': ['<p><img src="/upload/20190219/20190219134421TFsmu.jpg" title="20190219134421TFsmu.jpg" alt="20190219134421TFsmu.jpg"/></p>'], '_method': ['put']}}
+2019-02-19 13:44:38,433 log_helper.py[line:11] INFO url:/api/about/ip: 127.0.0.1
+2019-02-19 13:44:38,495 log_helper.py[line:11] INFO url:/upload/20190219/20190219134421TFsmu.jpgip: 127.0.0.1

@@ -4,7 +4,7 @@
 from bottle import get, put
 from common import web_helper, string_helper, db_helper
 
-#提交
+
 @get('/api/contact_us/')
 def callback():
     """

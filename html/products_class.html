@@ -70,7 +70,7 @@
     $(function () {
         //创建jqGrid组件
         $("#list").jqGrid({
-            url: "/api/product_class/",//组件创建完成之后请求数据的url
+            url: "/api/product_class/?type=backstage",//组件创建完成之后请求数据的url
             mtype: "get",//向后台请求数据的ajax的类型。可选post,get
             datatype: "json",//请求数据返回的类型。可选json,xml,txt
             height: 'auto',//高度，表格高度。可为数值、百分比或'auto'

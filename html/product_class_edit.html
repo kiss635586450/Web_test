@@ -126,7 +126,10 @@
             success: function (data) {
                 if (checkLogin(data, true)) {
                     layer.msg(data.msg, {icon: 1, time: 3000});
-                    layer_close();
+                    setTimeout(function () {
+                        parent.jQuery("#list").trigger("reloadGrid");
+                        layer_close();
+                    }, 1000);
                 }
             }
         });

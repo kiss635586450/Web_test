@@ -21,3 +21,79 @@ TypeError: unsupported operand type(s) for /: 'str' and 'int'
 2019-02-20 16:28:59,443 log_helper.py[line:11] INFO url:/api/product_class/ip: 127.0.0.1params(get):_search=false&nd=1550651339436&rows=20&page=1&sidx=id&sord=desc
 2019-02-20 16:29:08,574 log_helper.py[line:11] INFO url:/api/product_class/3/ip: 127.0.0.1params(post){'dict': {'_method': ['delete']}}
 2019-02-20 16:29:11,038 log_helper.py[line:11] INFO url:/api/product_class/ip: 127.0.0.1params(get):_search=false&nd=1550651351033&rows=20&page=1&sidx=id&sord=desc
+2019-02-21 15:14:30,705 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:14:30,745 log_helper.py[line:11] INFO url:/api/product/ ip:127.0.0.1 params(get):rows=4&page=1
+2019-02-21 15:14:36,133 log_helper.py[line:11] INFO url:/api/product_class/ ip:127.0.0.1
+2019-02-21 15:14:36,205 log_helper.py[line:11] INFO url:/api/product/ ip:127.0.0.1 params(get):product_class_id=4
+2019-02-21 15:14:37,751 log_helper.py[line:11] INFO url:/api/product/ ip:127.0.0.1 params(get):product_class_id=1
+2019-02-21 15:14:37,822 log_helper.py[line:11] INFO url:/api/product_class/ ip:127.0.0.1
+2019-02-21 15:14:39,075 log_helper.py[line:11] INFO url:/api/contact_us/ ip:127.0.0.1
+2019-02-21 15:14:42,865 log_helper.py[line:11] INFO url:/api/product_class/ ip:127.0.0.1
+2019-02-21 15:14:42,944 log_helper.py[line:11] INFO url:/api/product/ ip:127.0.0.1 params(get):product_class_id=4
+2019-02-21 15:14:44,833 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:14:52,386 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:14:54,390 log_helper.py[line:11] INFO url:/api/product_class/ ip:127.0.0.1 params(get):type=backstage&_search=false&nd=1550733294386&rows=20&page=1&sidx=id&sord=desc
+2019-02-21 15:14:57,205 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:15:02,120 log_helper.py[line:11] INFO url:/api/product_class/ ip:127.0.0.1
+2019-02-21 15:15:02,200 log_helper.py[line:11] INFO url:/api/product/ ip:127.0.0.1 params(get):type=backstage&_search=false&nd=1550733302131&rows=20&page=1&sidx=id&sord=desc
+2019-02-21 15:15:04,272 log_helper.py[line:11] INFO url:/api/product_class/ ip:127.0.0.1
+2019-02-21 15:16:08,460 log_helper.py[line:11] INFO url:/api/files/ ip:127.0.0.1 params(post):{'dict': {}}
+2019-02-21 15:16:12,005 log_helper.py[line:11] INFO url:/api/product_class/ ip:127.0.0.1
+2019-02-21 15:16:12,079 log_helper.py[line:11] INFO url:/api/product/ ip:127.0.0.1 params(get):type=backstage&_search=false&nd=1550733372024&rows=20&page=1&sidx=id&sord=desc
+2019-02-21 15:31:13,659 log_helper.py[line:11] INFO url:/api/product/ ip:127.0.0.1 params(get):product_class_id=1
+2019-02-21 15:31:13,732 log_helper.py[line:11] INFO url:/api/product_class/ ip:127.0.0.1
+2019-02-21 15:31:16,234 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:31:16,274 log_helper.py[line:11] INFO url:/api/product/ ip:127.0.0.1 params(get):rows=4&page=1
+2019-02-21 15:31:21,614 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:31:26,826 log_helper.py[line:11] INFO url:/api/contact_us/ ip:127.0.0.1
+2019-02-21 15:31:28,381 log_helper.py[line:11] INFO url:/api/product_class/ ip:127.0.0.1
+2019-02-21 15:31:28,463 log_helper.py[line:11] INFO url:/api/product/ ip:127.0.0.1 params(get):type=backstage&_search=false&nd=1550734288392&rows=20&page=1&sidx=id&sord=desc
+2019-02-21 15:31:30,640 log_helper.py[line:11] INFO url:/api/product_class/ ip:127.0.0.1
+2019-02-21 15:32:29,524 log_helper.py[line:11] INFO url:/api/files/ ip:127.0.0.1 params(post):{'dict': {}}
+2019-02-21 15:32:29,537 log_helper.py[line:11] INFO url:/api/product/ ip:127.0.0.1 params(post):{'dict': {'code': ['255'], 'place_of_origin': ['中国'], 'content': [''], 'product_class_id': ['5'], 'standard': ['袋'], 'is_enable': ['1'], 'front_cover_img': ['/upload/20190221/20190221153229X3Pxl.jpg'], 'quality_guarantee_period': ['3个月'], 'name': ['辣条']}}
+2019-02-21 15:32:39,483 log_helper.py[line:11] INFO url:/api/product/ ip:127.0.0.1 params(post):{'dict': {'code': ['255'], 'place_of_origin': ['中国'], 'content': ['<p>爽的很</p>'], 'product_class_id': ['5'], 'standard': ['袋'], 'is_enable': ['1'], 'front_cover_img': ['http://127.0.0.1:81/products_edit.html'], 'quality_guarantee_period': ['3个月'], 'name': ['辣条']}}
+2019-02-21 15:32:40,656 log_helper.py[line:11] INFO url:/api/product/ ip:127.0.0.1 params(get):type=backstage&_search=false&nd=1550734360653&rows=20&page=1&sidx=id&sord=desc
+2019-02-21 15:32:47,338 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:32:47,376 log_helper.py[line:11] INFO url:/api/product/ ip:127.0.0.1 params(get):rows=4&page=1
+2019-02-21 15:32:53,843 log_helper.py[line:11] INFO url:/api/contact_us/ ip:127.0.0.1
+2019-02-21 15:32:55,459 log_helper.py[line:11] INFO url:/api/product_class/ ip:127.0.0.1
+2019-02-21 15:32:55,539 log_helper.py[line:11] INFO url:/api/product/ ip:127.0.0.1 params(get):product_class_id=5
+2019-02-21 15:32:57,397 log_helper.py[line:11] INFO url:/api/product/ ip:127.0.0.1 params(get):product_class_id=4
+2019-02-21 15:32:57,470 log_helper.py[line:11] INFO url:/api/product_class/ ip:127.0.0.1
+2019-02-21 15:32:58,999 log_helper.py[line:11] INFO url:/api/product_class/ ip:127.0.0.1
+2019-02-21 15:32:59,073 log_helper.py[line:11] INFO url:/api/product/4/ ip:127.0.0.1
+2019-02-21 15:33:00,560 log_helper.py[line:11] INFO url:/api/product/ ip:127.0.0.1 params(get):product_class_id=5
+2019-02-21 15:33:00,628 log_helper.py[line:11] INFO url:/api/product_class/ ip:127.0.0.1
+2019-02-21 15:33:01,227 log_helper.py[line:11] INFO url:/api/product_class/ ip:127.0.0.1
+2019-02-21 15:33:01,309 log_helper.py[line:11] INFO url:/api/product/5/ ip:127.0.0.1
+2019-02-21 15:33:24,550 log_helper.py[line:11] INFO url:/api/product_class/ ip:127.0.0.1
+2019-02-21 15:33:24,621 log_helper.py[line:11] INFO url:/api/product/5/ ip:127.0.0.1
+2019-02-21 15:34:02,168 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:02,797 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:03,006 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:03,185 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:03,379 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:03,605 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:03,813 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:04,025 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:04,277 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:04,435 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:04,661 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:04,843 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:05,050 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:05,244 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:05,441 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:05,633 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:05,813 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:06,064 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:06,196 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:06,396 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:06,591 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:06,782 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:06,984 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:07,155 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:07,351 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:07,543 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:07,763 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:07,953 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
+2019-02-21 15:34:08,148 log_helper.py[line:11] INFO url:/api/about/ ip:127.0.0.1
